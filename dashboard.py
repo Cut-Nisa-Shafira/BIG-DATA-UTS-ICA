@@ -14,7 +14,7 @@ import cv2
 @st.cache_resource
 def load_models():
     try:
-        yolo_model = YOLO("model/best.pt")  # Model deteksi objek
+        yolo_model = YOLO("ica_Laporan 4.pt")  # Model deteksi objek
         classifier = tf.keras.models.load_model("model/classifier_model.h5")  # Model klasifikasi
         return yolo_model, classifier
     except Exception as e:
@@ -23,8 +23,8 @@ def load_models():
 
 yolo_model, classifier = load_models()
 
-# Daftar kelas untuk klasifikasi (sesuaikan dengan model Anda)
-class_names = ['Class A', 'Class B', 'Class C']  # Ganti dengan nama kelas aktual Anda
+# Daftar kelas untuk klasifikasi 
+class_names = ['Jute', 'Wheat', 'Rice', 'Maize', 'Sugarcane']  
 
 # ==========================
 # Custom CSS untuk Tema Warna Spectral (Pelangi)
