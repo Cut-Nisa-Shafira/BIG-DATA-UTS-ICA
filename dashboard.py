@@ -15,7 +15,7 @@ import cv2
 def load_models():
     try:
         yolo_model = YOLO("model/ica_Laporan 4.pt")  # Model deteksi objek
-        classifier = tf.keras.models.load_model("model/classifier_ica_laporan2.h5")  # Model klasifikasi
+        classifier = tf.keras.models.load_model("model/ica_laporan2.h5")  # Model klasifikasi
         return yolo_model, classifier
     except Exception as e:
         st.error(f"Error loading models: {e}")
