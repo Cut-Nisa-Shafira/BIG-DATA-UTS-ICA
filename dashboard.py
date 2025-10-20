@@ -1,9 +1,4 @@
-pip install streamlit
-pip install ultralytics
-pip install tensorflow
-pip install pillow
-pip install opencv-python
-pip install numpy
+
 
 import streamlit as st
 from ultralytics import YOLO
