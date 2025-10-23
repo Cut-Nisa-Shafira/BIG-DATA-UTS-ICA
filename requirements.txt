@@ -1,6 +1,37 @@
-streamlit
-ultralytics
-tensorflow
-opencv-python-headless
-Pillow
-numpy
+# --- Core ---
+streamlit==1.50.0
+numpy==2.2.6
+pandas==2.3.3
+matplotlib==3.10.7
+Pillow==11.3.0
+altair==5.5.0
+protobuf==6.33.0
+psutil==7.1.1
+scipy==1.16.2
+
+# --- Machine Learning ---
+tensorflow==2.20.0
+torch==2.9.0
+torchvision==0.24.0
+ultralytics==8.3.220
+
+# --- Image Processing (headless agar tidak error libGL) ---
+opencv-python-headless==4.12.0.88
+
+# --- Utilities ---
+rich==14.2.0
+requests==2.32.5
+jinja2==3.1.6
+typing-extensions==4.15.0
+pyarrow==21.0.0
+pyyaml==6.0.3
+
+# --- Visualization ---
+pydeck==0.9.1
+markdown==3.9
+markdown-it-py==4.0.0
+
+# --- Optional GPU (hapus jika pakai CPU saja) ---
+nvidia-cublas-cu12==12.8.4.1
+nvidia-cuda-runtime-cu12==12.8.90
+nvidia-cudnn-cu12==9.10.2.21
